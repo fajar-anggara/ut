@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-100">
+    <div class="w-full h-4  mt-10"></div>
+    <p class="text-light text-3xl mx-4 my-2">My chart</p>
+    <div class="flex flex-col px-4 py-2">
+        <div class="flex flex-row w-full p-4 bg-white rounded-xl mt-4">
+            <div class="basis-4/12">
+                <img class="p-1" src="noname2.png" alt="">
+            </div>
+            <div class="basis-8/12 flex flex-col justify-center ">
+                <p class="font-semibold text-xl text-[#564146]">Chocolate Flafour</p>
+                <div class="m-2 flex items-center basis-2/12">
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <p class="ms-2 text-sm font-bold text-gray-900 ">4.95</p>
+                </div>
+                <div class="flex flex-row">
+                    <div class="basis-1/2">
+                        <form class="flex flex-col items-center">
+                            <div class="relative flex items-center">
+                                <button type="button" id="decrement-button" data-input-counter-decrement="counter-input"
+                                    class="flex-shrink-0 inline-flex items-center justify-center border border-[#ff4a4c] rounded-md w-6 h-6 focus:ring-[#ff4a4c] focus:ring-2 focus:bg-[#ff4a4c] focus:ring-[#ff4a4c]">
+                                    <svg class="w-2 h-2 text-gray-900 " aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 1h16" />
+                                    </svg>
+                                </button>
+                                <input type="text" id="counter-input" data-input-counter
+                                    class="flex-shrink-0 text-gray-900  border-0 bg-transparent text-sm font-normal focus:outline-none focus:ring-0 max-w-[2.5rem] text-center"
+                                    placeholder="" value="12" required>
+                                <button type="button" id="increment-button" data-input-counter-increment="counter-input"
+                                    class="flex-shrink-0 inline-flex items-center justify-center border border-[#ff4a4c] rounded-md w-6 h-6 focus:ring-[#ff4a4c] focus:ring-2 focus:bg-[#ff4a4c] focus:ring-[#ff4a4c]">
+                                    <svg class="w-2 h-2 text-gray-900 " aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M9 1v16M1 9h16" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="basis-1/2 flex flex-row justify-center items-center">
+                        <span class="text-xs font-semibold">Rp.</span>
+                        <span class="text-xl font-extrabold tracking-tight">49.000</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="flex flex-row w-full p-4 bg-white rounded-xl mt-4">
+            <div class="basis-4/12">
+                <img class="p-1" src="noname2.png" alt="">
+            </div>
+            <div class="basis-8/12 flex flex-col justify-center ">
+                <p class="font-semibold text-xl text-[#564146]">Chocolate Flafour</p>
+                <div class="m-2 flex items-center basis-2/12">
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <p class="ms-2 text-sm font-bold text-gray-900 ">4.95</p>
+                </div>
+                <div class="flex flex-row">
+                    <div class="basis-1/2">
+                        <form class="flex flex-col items-center">
+                            <div class="relative flex items-center">
+                                <button type="button" id="decrement-button" data-input-counter-decrement="counter-input"
+                                    class="flex-shrink-0 inline-flex items-center justify-center border border-[#ff4a4c] rounded-md w-6 h-6 focus:ring-[#ff4a4c] focus:ring-2 focus:bg-[#ff4a4c] focus:ring-[#ff4a4c]">
+                                    <svg class="w-2 h-2 text-gray-900 " aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 1h16" />
+                                    </svg>
+                                </button>
+                                <input type="text" id="counter-input" data-input-counter
+                                    class="flex-shrink-0 text-gray-900  border-0 bg-transparent text-sm font-normal focus:outline-none focus:ring-0 max-w-[2.5rem] text-center"
+                                    placeholder="" value="12" required>
+                                <button type="button" id="increment-button" data-input-counter-increment="counter-input"
+                                    class="flex-shrink-0 inline-flex items-center justify-center border border-[#ff4a4c] rounded-md w-6 h-6 focus:ring-[#ff4a4c] focus:ring-2 focus:bg-[#ff4a4c] focus:ring-[#ff4a4c]">
+                                    <svg class="w-2 h-2 text-gray-900 " aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M9 1v16M1 9h16" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="basis-1/2 flex flex-row justify-center items-center">
+                        <span class="text-xs font-semibold">Rp.</span>
+                        <span class="text-xl font-extrabold tracking-tight">49.000</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="flex flex-row w-full p-4 bg-white rounded-xl mt-4">
+            <div class="basis-4/12">
+                <img class="p-1" src="noname2.png" alt="">
+            </div>
+            <div class="basis-8/12 flex flex-col justify-center ">
+                <p class="font-semibold text-xl text-[#564146]">Chocolate Flafour</p>
+                <div class="m-2 flex items-center basis-2/12">
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <p class="ms-2 text-sm font-bold text-gray-900 ">4.95</p>
+                </div>
+                <div class="flex flex-row">
+                    <div class="basis-1/2">
+                        <form class="flex flex-col items-center">
+                            <div class="relative flex items-center">
+                                <button type="button" id="decrement-button" data-input-counter-decrement="counter-input"
+                                    class="flex-shrink-0 inline-flex items-center justify-center border border-[#ff4a4c] rounded-md w-6 h-6 focus:ring-[#ff4a4c] focus:ring-2 focus:bg-[#ff4a4c] focus:ring-[#ff4a4c]">
+                                    <svg class="w-2 h-2 text-gray-900 " aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 1h16" />
+                                    </svg>
+                                </button>
+                                <input type="text" id="counter-input" data-input-counter
+                                    class="flex-shrink-0 text-gray-900  border-0 bg-transparent text-sm font-normal focus:outline-none focus:ring-0 max-w-[2.5rem] text-center"
+                                    placeholder="" value="12" required>
+                                <button type="button" id="increment-button" data-input-counter-increment="counter-input"
+                                    class="flex-shrink-0 inline-flex items-center justify-center border border-[#ff4a4c] rounded-md w-6 h-6 focus:ring-[#ff4a4c] focus:ring-2 focus:bg-[#ff4a4c] focus:ring-[#ff4a4c]">
+                                    <svg class="w-2 h-2 text-gray-900 " aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M9 1v16M1 9h16" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="basis-1/2 flex flex-row justify-center items-center">
+                        <span class="text-xs font-semibold">Rp.</span>
+                        <span class="text-xl font-extrabold tracking-tight">49.000</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="flex flex-row w-full p-4 bg-white rounded-xl mt-4">
+            <div class="basis-4/12">
+                <img class="p-1" src="noname2.png" alt="">
+            </div>
+            <div class="basis-8/12 flex flex-col justify-center ">
+                <p class="font-semibold text-xl text-[#564146]">Chocolate Flafour</p>
+                <div class="m-2 flex items-center basis-2/12">
+                    <svg class="w-4 h-4 text-yellow-300 me-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        fill="currentColor" viewBox="0 0 22 20">
+                        <path
+                            d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                    </svg>
+                    <p class="ms-2 text-sm font-bold text-gray-900 ">4.95</p>
+                </div>
+                <div class="flex flex-row">
+                    <div class="basis-1/2">
+                        <form class="flex flex-col items-center">
+                            <div class="relative flex items-center">
+                                <button type="button" id="decrement-button" data-input-counter-decrement="counter-input"
+                                    class="flex-shrink-0 inline-flex items-center justify-center border border-[#ff4a4c] rounded-md w-6 h-6 focus:ring-[#ff4a4c] focus:ring-2 focus:bg-[#ff4a4c] focus:ring-[#ff4a4c]">
+                                    <svg class="w-2 h-2 text-gray-900 " aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 2">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M1 1h16" />
+                                    </svg>
+                                </button>
+                                <input type="text" id="counter-input" data-input-counter
+                                    class="flex-shrink-0 text-gray-900  border-0 bg-transparent text-sm font-normal focus:outline-none focus:ring-0 max-w-[2.5rem] text-center"
+                                    placeholder="" value="12" required>
+                                <button type="button" id="increment-button" data-input-counter-increment="counter-input"
+                                    class="flex-shrink-0 inline-flex items-center justify-center border border-[#ff4a4c] rounded-md w-6 h-6 focus:ring-[#ff4a4c] focus:ring-2 focus:bg-[#ff4a4c] focus:ring-[#ff4a4c]">
+                                    <svg class="w-2 h-2 text-gray-900 " aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M9 1v16M1 9h16" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="basis-1/2 flex flex-row justify-center items-center">
+                        <span class="text-xs font-semibold">Rp.</span>
+                        <span class="text-xl font-extrabold tracking-tight">49.000</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="bg-white flex flex-col my-4 rounded-xl p-4">
+            <div class="flex flex-row justify-between">
+                <p class="text-[#aca9a7] text-lg">Total</p>
+                <p class="text-[#aca9a7] text-lg">Rp. 49.000</p>
+            </div>
+            <div class="flex flex-row justify-between">
+                <p class="text-[#aca9a7] text-lg">Discount</p>
+                <p class="text-[#aca9a7] text-lg">Rp. 49.000</p>
+            </div>
+            <div class="flex flex-row justify-between">
+                <p class="text-[#aca9a7] text-lg">Subtotal</p>
+                <p class="text-[#aca9a7] text-lg">Rp. 49.000</p>
+            </div>
+        </div>
+        <div class="w-full h-14"></div>
+    </div>
+    <div class="fixed bottom-0 w-full p-4">
+        <div>
+            <button type="button"
+                class="w-full flex flex-row justify-center text-white bg-[#ff4a4c] focus:ring-4 focus:outline-none focus:ring-[#ff4a4c] font-medium rounded-lg text-md px-5 py-2.5 text-center inline-flex items-center me-2 self-center">
+                <svg class="w-3.5 h-3.5 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 18 21">
+                    <path
+                        d="M15 12a1 1 0 0 0 .962-.726l2-7A1 1 0 0 0 17 3H3.77L3.175.745A1 1 0 0 0 2.208 0H1a1 1 0 0 0 0 2h.438l.6 2.255v.019l2 7 .746 2.986A3 3 0 1 0 9 17a2.966 2.966 0 0 0-.184-1h2.368c-.118.32-.18.659-.184 1a3 3 0 1 0 3-3H6.78l-.5-2H15Z" />
+                </svg>
+                Beli Sekarang
+            </button>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+
+</html>
